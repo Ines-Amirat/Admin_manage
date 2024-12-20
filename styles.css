@@ -1,0 +1,144 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    background-color: rgb(221, 220, 220) ;
+}
+
+.dashboard {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar */
+#sidebar {
+    width: 250px; /* Largeur fixe pour un contrôle plus précis */
+    background-color: #311b36; /* Un gris très foncé */
+    color: #fff;
+    padding: 20px;
+    transition: width 0.3s ease-in-out; /* Animation fluide pour le repli */
+}
+
+#sidebar h2 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar ul li {
+    margin-bottom: 15px;
+}
+
+#sidebar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+#sidebar ul li a:hover {
+    background-color: #6b5b75; /* Un gris plus clair pour le survol */
+}
+
+/* Main Content */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#main-title {
+    font-size: 24px;
+    color: #311b36;
+}
+
+#table-container {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Bouton pour masquer le menu */
+#hide-menu-button {
+    background-color: #6b5b75; /* Gris pour le bouton */
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+}
+
+#hide-menu-button i {
+    margin-right: 10px; /* Espacement entre l'icône et le texte */
+}
+/* Style pour les tableaux */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #311b36; /* Couleur du titre des colonnes */
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+    background-color: #f8f9fa; /* Alternance des couleurs */
+}
+
+table tr:hover {
+    background-color: #f1f1f1; /* Couleur au survol */
+}
+
+button {
+    background-color: #ff4d4d; /* Couleur rouge pour les boutons */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #cc0000; /* Couleur au survol des boutons */
+}

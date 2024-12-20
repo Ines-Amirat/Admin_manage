@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Clients and Accounts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <div id="sidebar">
+            <button id="hide-menu-button">
+              <i class="fa-solid fa-angle-left"></i>
+              <span>Hide Menu</span>
+            </button>
+            <ul>
+                <li><a href="#" id="manage-clients-link">Manage Clients</a></li>
+                <li><a href="#" id="manage-accounts-link">Manage Accounts</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header>
+                <h1 id="main-title">Manage Clients</h1>
+            </header>
+
+            <!-- Zone pour afficher les messages -->
+            <p id="response-message" style="color: red; font-weight: bold;"></p>
+
+            <!-- Dynamic Table -->
+            <div id="table-container">
+                <!-- Le tableau sera chargé ici avec JavaScript -->
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

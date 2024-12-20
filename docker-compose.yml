@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+  php:
+    image: php:8.1-apache
+    ports:
+      - "8000:80"
+    volumes:
+      - ./:/var/www/html
+    environment:
+      - PHP_EXTENSIONS=mysqli
+    command: docker-php-ext-install mysqli && docker-php-ext-enable mysqli
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: projet_db
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "8080:80"
